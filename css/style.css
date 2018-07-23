@@ -1,0 +1,56 @@
+body	{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+*	{
+	margin: 0;
+	padding: 0;
+}
+
+#plagin	{
+	display: inline-block;
+	max-width: 992px;
+	min-width: 320px;
+	text-align: left;
+}
+
+.revealContent	{
+	width: 100%;
+	background: rgb(180, 240, 255);
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.revealContent-title	{
+	width: 100%;
+	padding: 10px 30px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.pointer	{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.revealContent.active>.revealContent-title>.pointer	{
+	transform: rotate(180deg);
+}
+
+.pointer>img	{
+	width: auto;
+	height: 20px;
+}
+
+.contents-revealContent	{
+	padding: 0 30px 30px;
+}
